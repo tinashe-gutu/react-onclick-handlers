@@ -10,7 +10,7 @@ import TestButton from "./components/TestButton";
 function App(): JSX.Element {
   return (
     <>
-      <AppHeader title={"React onClick button demos"} />
+      <AppHeader title={"React onClick button demos"}/>
       <hr />
       <ButtonWithClickExampleA />
       <hr />

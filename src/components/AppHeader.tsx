@@ -3,7 +3,15 @@ interface AppHeaderProps {
 }
 
 function AppHeader({ title }: AppHeaderProps): JSX.Element {
-  return <h1>{title}</h1>;
+  const handleClick = () => {
+    title=capitaliseLetters(title);
+    console.log(title);
+  };
+
+  function capitaliseLetters(title: string) {
+    return title.toUpperCase()
+  }
+  return <h1 onClick={handleClick}>{title}</h1>;
 }
 
 export default AppHeader;
